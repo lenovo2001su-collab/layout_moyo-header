@@ -32,7 +32,7 @@ body {
   height: 40px;
 }
 
-.nav_ul {
+.nav__list {
   display: flex;
   align-items: center;
   list-style: none;
@@ -40,7 +40,7 @@ body {
   padding: 0;
 }
 
-.nav_li {
+.nav__link {
   display: inline-block;
   height: 60px;
   line-height: 60px;
@@ -51,16 +51,16 @@ body {
   transition: color 0.2s ease;
 }
 
-.nav_ul li:not(:last-child) {
+.nav__item:not(:last-child) {
   margin-right: 20px;
 }
 
-.nav_li.is-active {
+.nav__link.is-active {
   color: var(--blue);
   position: relative;
 }
 
-.nav_li.is-active::after {
+.nav__link.is-active::after {
   content: '';
   position: absolute;
   left: 0;
@@ -71,6 +71,6 @@ body {
   border-radius: 8px;
 }
 
-.nav_li:hover {
+.nav__link:hover {
   color: var(--blue);
 }
